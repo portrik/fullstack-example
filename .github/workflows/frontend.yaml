@@ -18,7 +18,7 @@ jobs:
           node-version: latest
 
       - name: Set Up pnpm
-        uses: pnpm/action-setup@2.2.4
+        uses: pnpm/action-setup@v2.2.4
         with:
           version: latest
           run_installs: true
