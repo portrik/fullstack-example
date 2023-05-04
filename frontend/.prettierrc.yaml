@@ -1,0 +1,13 @@
+# Forcing these values here since prettier does not want to play nice with all of eslint's configs and plugins
+singleQuote: true
+jsxSingleQuote: true
+quoteProps: consistent
+trailingCommas: all
+bracketLine: true
+
+# Import order: third-party modules, aliased modules, local imports
+importOrder:                                # Defines the order in which to sort the imported modules. If a module does not match any of the criteria, it is sorted first.
+  - ^\@(.[^/]*)$                            # Aliased packages. Any module starting with "@" and not containing any "/". For example, "@organisms"
+  - ^[./|../](.*)                           # Local imports. Any module starting with "./" or "../".
+importOrderSeparation: true                 # Separates import groups with an empty line
+importOrderSortSpecifiers: false            # A boolean value to enable or disable sorting of the specifiers in an import declarations.

@@ -1,0 +1,9 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`@pages/Article > Should Render as Expected 1`] = `
+<body>
+  <div>
+    <div />
+  </div>
+</body>
+`;
