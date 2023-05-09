@@ -7,7 +7,8 @@
         "build": "vite build",
         "test": "vitest",
         "test:ci": "vitest run --watch=false",
-        "lint": "eslint src/"
+        "lint": "eslint src/",
+        "generate-api": "openapi-typescript https://raw.githubusercontent.com/Applifting/fullstack-exercise/master/api.yml --output src/types/api.ts && eslint src/types/api.ts --fix"
     },
     "devDependencies": {
         "@testing-library/react": "^14.0.0",
@@ -22,12 +23,14 @@
         "eslint-plugin-react": "^7.32.2",
         "eslint-plugin-unicorn": "^46.0.0",
         "happy-dom": "^9.10.9",
+        "openapi-typescript": "^6.2.4",
         "prettier": "^2.8.8",
         "typescript": "^5.0.4",
         "vite": "^4.3.4",
         "vitest": "^0.31.0"
     },
     "dependencies": {
+        "openapi-fetch": "^0.1.2",
         "react": "^18.2.0",
         "react-dom": "^18.2.0"
     }
