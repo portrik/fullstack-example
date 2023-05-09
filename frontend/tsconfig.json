@@ -19,8 +19,17 @@
             "vitest/globals"
         ],
         "paths": {
+            "@api": [
+                "src/api"
+            ],
+            "@hooks": [
+                "src/hooks"
+            ],
             "@pages": [
                 "src/pages"
+            ],
+            "@types": [
+                "src/types"
             ]
         }
     },

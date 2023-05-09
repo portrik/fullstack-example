@@ -30,7 +30,10 @@ export default defineConfig({
 
 	resolve: {
 		alias: {
-			'@pages': path.resolve(directoryName, 'src', 'pages')
+			'@api': path.resolve(directoryName, 'src', 'api'),
+			'@hooks': path.resolve(directoryName, 'src', 'hooks'),
+			'@pages': path.resolve(directoryName, 'src', 'pages'),
+			'@types': path.resolve(directoryName, 'src', 'types')
 		}
 	}
 });
